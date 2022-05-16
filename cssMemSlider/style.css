@@ -141,6 +141,9 @@ body {
 }
 
 .control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 8px;
   width: 30px;
   margin: 6px;
@@ -158,9 +161,14 @@ body {
           transform: scale(1.1);
 }
 
+.btn-area {
+  width: 40px;
+  height: 25px;
+  cursor: pointer;
+}
+
 input[name="Bender"] {
-  position: absolute;
-  visibility: hidden;
+  display: none;
 }
 
 .slides {
