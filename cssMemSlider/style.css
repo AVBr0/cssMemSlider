@@ -150,9 +150,17 @@ body {
 }
 
 .control:hover {
-  opacity: 0.8;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  opacity: 0.9;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background-color: rgb(65, 170, 255);
+}
+
+.control:active {
+  opacity: 1;
+  background-color: rgb(0, 46, 252);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .btn-area {
@@ -161,7 +169,7 @@ body {
   cursor: pointer;
 }
 
-input[name="Bender"] {
+input {
   display: none;
 }
 
@@ -209,6 +217,7 @@ input[name="Bender"] {
   color: #fff;
   z-index: 2;
   margin-top: -15px;
+  transition: all .8s ease;
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
@@ -229,6 +238,23 @@ input[name="Bender"] {
     -ms-flex-pack: center;
         justify-content: center;
   }
+}
+
+.fade {
+  -webkit-animation-name: fade-effect;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade-effect {
+  0% {opacity: .4}
+  100% {opacity: 1}
+}
+
+@keyframes fade-effect {
+  0% {opacity: .4}
+  100% {opacity: 1}
 }
 
 #inp1:checked ~ .s1 {
@@ -257,4 +283,15 @@ input[name="Bender"] {
 
 #inp7:checked ~ .s1 {
   margin-left: -85.7143%;
+}
+
+#inp1:checked ~ .navigation #l1,
+#inp2:checked ~ .navigation #l2,
+#inp3:checked ~ .navigation #l3,
+#inp4:checked ~ .navigation #l4,
+#inp5:checked ~ .navigation #l5,
+#inp6:checked ~ .navigation #l6,
+#inp7:checked ~ .navigation #l7 {
+	background-color: rgb(61, 61, 252);
+  opacity: 1;
 }
