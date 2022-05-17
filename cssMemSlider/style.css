@@ -77,7 +77,7 @@ body {
 .slider {
   width: 50%;
   overflow: hidden;
-  border: 1.2rem solid #9fc7fc;
+  border: 1.9rem solid #9fc7fc;
   border-radius: 1.5rem;
   background-color: #9fc7fc;
 }
@@ -103,7 +103,7 @@ body {
 }
 
 .navigation {
-  margin-left: 97%;
+  margin-left: 95.5%;
   -webkit-transform: translateX(-90%);
           transform: translateX(-90%);
   display: -webkit-box;
@@ -263,27 +263,27 @@ input {
 }
 
 #inp1:checked ~ .slides>.active-s {
-  margin-left: 0;
+  margin-left: 0.01%;
 }
 
 #inp2:checked ~ .slides>.active-s {
-  margin-left: -14.2857%;
+  margin-left: -14.2817%;
 }
 
 #inp3:checked ~ .slides>.active-s {
-  margin-left: -28.5714%;
+  margin-left: -28.5694%;
 }
 
 #inp4:checked ~ .slides>.active-s {
-  margin-left: -42.8571%;
+  margin-left: -42.8531%;
 }
 
 #inp5:checked ~ .slides>.active-s {
-  margin-left: -57.1429%;
+  margin-left: -57.1389%;
 }
 
 #inp6:checked ~ .slides>.active-s {
-  margin-left: -71.4286%;
+  margin-left: -71.4246%;
 }
 
 #inp7:checked ~ .slides>.active-s {
